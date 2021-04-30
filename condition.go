@@ -9,6 +9,7 @@ func main() {
 	fmt.Println("test")
 
 	// 使用条件语句来验证函数输出
+	// if 初始化语句; 条件
 	if t, ok := mySqrt(5); ok {
 		fmt.Println(t)
 	} else {
