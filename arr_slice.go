@@ -67,6 +67,9 @@ func main() {
 
 	fmt.Println(slice1)
 
+	// 关于 len 和 cap 的区别
+	// len 是当前切片的长度，是[start, end] start 到 end 的长度
+	// cap 是当前切片的最大容量，[start, end] start 到数组结尾的长度
 	sliceLenAndCap()
 
 	//	问题1：len 和 cap 分别为
@@ -138,6 +141,6 @@ func sliceLenAndCap() {
 	s1 := [4]int{1, 2, 3, 4}
 	s2 := s1[1:3]
 
-	fmt.Println("s2 的 cap 值为：", cap(s2))
-	fmt.Println("s2 的 len 值为：", len(s2))
+	fmt.Println("s2 的 cap 值为：", cap(s2)) // 3
+	fmt.Println("s2 的 len 值为：", len(s2)) // 2
 }
