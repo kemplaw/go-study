@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/**
+切片的遍历
+*/
+
 func main() {
 	var slice1 []int = make([]int, 4)
 	slice1[0] = 1
