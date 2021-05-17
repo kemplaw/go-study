@@ -8,6 +8,7 @@ import "fmt"
 
 func main() {
 	// 如果map的 value 类型可以作为key，并且是唯一的，就可以与key对调
+	// 为了保证不出错，需要仔细检查value的唯一性，并且使用多值map ，例如 map[int][]string
 
 	m1 := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("before inverted map: ", m1)
