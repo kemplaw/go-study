@@ -6,7 +6,7 @@ import "fmt"
 接口基础
 */
 
-// 接口定义了一组方法（没有具体实现）
+// 接口定义了一组方法（没有具体实现），来说明对象的一组行为
 // 接口里不能包含变量
 
 // 多类型可以实现同一个接口
@@ -37,11 +37,11 @@ func main() {
 	sq1.side = 5.25
 
 	// 声明一个接口类型的变量
-	var areaIntf Shaper
+	var areaInfo Shaper
 	// 由于 sq1 实现了 shaper 的 area 方法，所以可以视为 sq1 实现（隐式）了接口 Shaper
-	// 所以 areaIntf 可以赋值为 sq1
+	// 所以 areaInfo 可以赋值为 sq1
 	// sq1 没有实现 shaper 接口，会抛出 Square not implement interface 的异常
-	areaIntf = sq1
+	areaInfo = sq1
 
-	fmt.Println(areaIntf.Area())
+	fmt.Println(areaInfo.Area())
 }
